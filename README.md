@@ -1,6 +1,17 @@
-# Rephrase_and_Contrast
+# Rephrase and Contrast: Fine-Tuning Language Models for Enhanced Understanding of Communication and Computer Networks
 
-This is the repository for paper [Rephrase and Contrast: Fine-Tuning Language Models for Enhanced Understanding of Communication and Computer Networks](https://arxiv.org/abs/2409.19007). This repository includes the Llama-2-7B finetuning related files, including
+
+## Introduction
+
+- This is the repository for paper [Rephrase and Contrast: Fine-Tuning Language Models for Enhanced Understanding of Communication and Computer Networks](https://arxiv.org/abs/2409.19007). 
+
+- Main methodology of Rephrase and Contrast
+![](figures/main_figure.png)
+
+- Experiment results over other baseline models
+![](figures/baseline_experiment_results.jpg)
+
+This repository includes the Llama-2-7B finetuning related files, including
 - [lora weights of RaC](llama-2-7b/RaC_lora)
 - [training data and released testing benchmark](#dataset)
 - [training and evaluation scripts](#training-scripts)
@@ -17,9 +28,14 @@ pip install llama-recipes transformers peft openpyxl
 Llama-2-7b model weights and converted hugging face format weights needs to be put to the [7B](llama-2-7b/7B) folder before loading models.
 
 ### Dataset
-Datasets are stored in [chatbot_datasets folder](llama-2-7b/chatbot_datasets)
+- Overview of the datasets:
+![](figures/datasets.png)
+- Datasets are stored in [chatbot_datasets folder](llama-2-7b/chatbot_datasets)
+- How we construct the dataset:
 
-The released test benchmarks (easy dataset, hard dataset, comprehensive dataset) are in the respective sheets of [Data_OpenSource.xlsx](llama-2-7b/chatbot_datasets/Data_OpenSource.xlsx)
+The datasets are built upon 10 textbooks on computer networking, including both foundational theories and the latest technical advancements in the networking field. We first employed optical character recognition (OCR) software to convert the selected textbooks into textual material. Then We leveraged the GPT-4 API for
+the implementation of RaC QA pair generation. Finally, QA pairs are reviewed manually. For data augmentation, we designed ChoiceBoost to augment the dataset. Please refer to our paper for more details on the implementation.
+- The released test benchmarks (easy dataset, hard dataset, comprehensive dataset) are in the respective sheets of [Data_OpenSource.xlsx](llama-2-7b/chatbot_datasets/Data_OpenSource.xlsx)
 
 ### Training Scripts
 The used training scripts are [training script](llama-recipes/train_eval_chatbot.sh), [k-fold training script](llama-recipes/train_eval_chatbot_kfold.sh) and [ablation training script](llama-recipes/train_eval_chatbot_ablation.sh).
@@ -59,3 +75,6 @@ To cite this paper, please add the following citation to your paper:
   year={2024}
 }
 ```
+
+## Questions
+For enquiries about the paper or the code, please feel free to open an issue.
