@@ -2,7 +2,8 @@
 
 ## Note
 
-- We highlight a xxx. 
+- This paper has been accepted by IEEE International Conference on Computing, Networking and Communications (ICNC'25).
+- We want to bring readers' attention on the revision of a typo we made in the ICNC proceeding: xxx 
 
 
 ## Introduction
