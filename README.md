@@ -1,5 +1,9 @@
 # Rephrase and Contrast: Fine-Tuning Language Models for Enhanced Understanding of Communication and Computer Networks
 
+## Note
+
+- We highlight a xxx. 
+
 
 ## Introduction
 
