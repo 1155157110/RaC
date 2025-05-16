@@ -3,7 +3,7 @@
 ## Note
 
 - This paper has been accepted by IEEE International Conference on Computing, Networking and Communications (ICNC'25).
-- We want to bring readers' attention on the revision of a typo we made in the ICNC proceeding: xxx 
+- We want to bring readers' attention on the revision of a typo we made in the ICNC proceeding: In the abstract and the conclusion, the **accuracy improvement** of our experimental results is **28.75%**, not 63.73%. We mistook the absolute value of accuracy as the relative performance improvement. We have reached out the chair for revision, but we are told that the proceeding has been finalized and cannot be revised. Hereby we made the clarification to readers. We apologize for the confusion.
 
 
 ## Introduction
@@ -79,11 +79,13 @@ xxx
 ## Reference
 To cite this paper, please add the following citation to your paper:
 ```
-@article{wang2024rephrase,
+@inproceedings{wang2025rephrase,
   title={Rephrase and Contrast: Fine-Tuning Language Models for Enhanced Understanding of Communication and Computer Networks},
-  author={Wang, Liujianfu and Du, Yuyang and Lin, Jingqi and Chen, Kexin and Liew, Soung Chang},
-  journal={arXiv preprint arXiv:2409.19007},
-  year={2024}
+  author={Wang, Du, Lin, Chen, and Liew},
+  booktitle={2025 International Conference on Computing, Networking and Communications (ICNC)},
+  pages={1--7},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
